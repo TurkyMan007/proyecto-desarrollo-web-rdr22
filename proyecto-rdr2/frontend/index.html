@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inventario RDR2</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  <header class="encabezado py-4 mb-4">
+    <div class="container">
+      <h1 class="titulo mb-1">Inventario de objetos</h1>
+      <p class="mb-0 subtitulo">Red Dead Redemption 2 · Base de datos RDR2</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="row g-3 mb-4" aria-label="Filtros">
+      <div class="col-md-8">
+        <label for="filtroNombre" class="form-label">Buscar por nombre</label>
+        <input type="text" id="filtroNombre" class="form-control" placeholder="Ej: Canned, Bread, Gin...">
+      </div>
+      <div class="col-md-4">
+        <label for="filtroStock" class="form-label">Disponibilidad</label>
+        <select id="filtroStock" class="form-select">
+          <option value="todos">Todos</option>
+          <option value="con">Con stock</option>
+          <option value="sin">Sin stock</option>
+        </select>
+      </div>
+    </section>
+
+    <section aria-label="Resultados">
+      <p class="text-muted" id="contador" aria-live="polite"></p>
+      <div class="table-responsive">
+        <table class="table table-hover align-middle tabla-rdr">
+          <thead>
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">Objeto</th>
+              <th scope="col">Stock</th>
+              <th scope="col">Tienda</th>
+            </tr>
+          </thead>
+          <tbody id="tabla"></tbody>
+        </table>
+      </div>
+      <div id="mensaje" class="alert alert-warning d-none" role="alert"></div>
+    </section>
+  </main>
+
+  <footer class="text-center py-4 mt-4 pie">
+    <small>Proyecto Diseño Web · Evaluación 3</small>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

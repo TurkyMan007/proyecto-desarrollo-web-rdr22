@@ -1,0 +1,51 @@
+:root {
+  --cafe-oscuro: #2b1d14;
+  --cafe: #5c3d2e;
+  --arena: #f3e9d8;
+  --dorado: #c9a227;
+}
+
+body {
+  background-color: var(--arena);
+  color: var(--cafe-oscuro);
+}
+
+.encabezado {
+  background-color: var(--cafe-oscuro);
+  color: var(--arena);
+  border-bottom: 4px solid var(--dorado);
+}
+
+.titulo {
+  font-family: Georgia, 'Times New Roman', serif;
+  letter-spacing: 1px;
+}
+
+.subtitulo {
+  color: var(--dorado);
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--dorado);
+  box-shadow: 0 0 0 0.2rem rgba(201, 162, 39, 0.25);
+}
+
+.tabla-rdr thead {
+  background-color: var(--cafe);
+  color: var(--arena);
+}
+
+.tabla-rdr tbody tr:hover {
+  background-color: rgba(201, 162, 39, 0.15);
+}
+
+.sin-stock {
+  color: #9b2c2c;
+  font-weight: 600;
+}
+
+.pie {
+  background-color: var(--cafe-oscuro);
+  color: var(--arena);
+}
