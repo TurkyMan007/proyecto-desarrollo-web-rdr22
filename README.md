@@ -1,6 +1,6 @@
 Proyecto Diseño Web - Evaluación 3
 
-Hice una página que lee datos de una base de datos MySQL y los muestra en pantalla. Usamos la base de Red Dead Redemption 2 y mostramos los objetos del almacén con su stock.
+Hice una página que lee datos de una base de datos MySQL y los muestra en pantalla. Usé la base de Red Dead Redemption 2 y mostré los objetos del almacén con su stock.
 
 Martin Alonso Márquez
 
